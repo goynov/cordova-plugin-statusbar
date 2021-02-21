@@ -107,6 +107,7 @@ public class StatusBar extends CordovaPlugin {
                         uiOptions &= ~View.SYSTEM_UI_FLAG_FULLSCREEN;
 
                         window.getDecorView().setSystemUiVisibility(uiOptions);
+                        setStatusBarTransparent(true);
                     }
 
                     // CB-11197 We still need to update LayoutParams to force status bar
